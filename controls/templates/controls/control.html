@@ -1,0 +1,370 @@
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+	<head>
+	<title>Halaman Kontrol</title>
+	<link rel="stylesheet" href="{%static 'stylecontrol.css'%}">
+	<link rel="stylesheet" href="{%static 'jqx.base.css'%}" type="text/css" />
+    <script type="text/javascript" src="{%static 'jquery-1.11.1.min.js'%}"></script>
+    <script type="text/javascript" src="{%static 'jqxcore.js'%}"></script>
+    <script type="text/javascript" src="{%static 'jqxdraw.js'%}"></script>
+    <script type="text/javascript" src="{%static 'jqxknob.js'%}"></script>
+    <script type="text/javascript" src="{%static 'jqxnumberinput.js'%}"></script>
+    <style type="text/css">
+
+        .inputField {
+            left: 40px;
+            top: 148px;
+            position: absolute;
+            background: transparent;
+            border: none;
+        }
+        text.jqx-knob-label {
+            font-size: 10px;
+        }
+        .inputField .jqx-input-content {
+            background: transparent;
+            font-size: 18px;
+            color: rgb(224, 224, 224);
+        }
+
+    </style>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#containerknob1').jqxKnob({
+                value: 0,
+                min: -90,
+                max: 90,
+                startAngle: 120,
+                endAngle: 420,
+                snapToStep: true,
+                rotation: 'clockwise',
+                style: { stroke: '#dfe3e9', strokeWidth: 3, fill: { color: '#fefefe', gradientType: "linear", gradientStops: [[0, 1], [50, 0.9], [100, 1]] } },
+                marks: {
+                    colorRemaining: { color: 'grey', border: 'grey' },
+                    colorProgress: { color: '#00a4e1', border: '#00a4e1' },
+                    type: 'line',
+                    offset: '71%',
+                    thickness: 3,
+                    size: '6%',
+                    majorSize: '9%',
+                    majorInterval: 10,
+                    minorInterval: 2
+                },
+                labels: {
+                    offset: '88%',
+                    step: 10,
+                    visible: true
+                },
+                progressBar: {
+                    style: { fill: '#00a4e1', stroke: 'grey' },
+                    size: '9%',
+                    offset: '60%',
+                    background: { fill: 'grey', stroke: 'grey' }
+                },
+                pointer: { type: 'arrow', style: { fill: '#00a4e1', stroke: 'grey' }, size: '59%', offset: '49%', thickness: 20 }
+            });
+            var input = $('<div class="inputField">');
+            $('#containerknob1').append(input);
+            var inputOptions = {
+                width: 80,
+                height: '40px',
+                decimal: 0, // starting value same as widget
+                min: -90,  // same as widget
+                max: 90, // same as widget
+                textAlign: 'center',
+                decimalDigits: 1,
+                inputMode: 'simple'
+            };
+            $(input).jqxNumberInput(inputOptions);
+            $(input).on('mousedown', function (event) {
+                event.stopPropagation();
+            });
+            $(input).on('keyup', function () {
+                var val = $(this).val();
+                $('#containerknob1').val(val);
+            });
+            $(input).on('change', function () {
+                var val = $(this).val();
+                $('#containerknob1').val(val);
+            });
+            $('#containerknob1').on('change', function (event) {
+                if (event.args.changeSource == 'propertyChange' || event.args.changeSource == 'val') { return; }
+                $(input).val(event.args.value);
+            })
+        });
+
+		$(document).ready(function () {
+            $('#containerknob2').jqxKnob({
+                value: 0,
+                min: -90,
+                max: 90,
+                startAngle: 120,
+                endAngle: 420,
+                snapToStep: true,
+                rotation: 'clockwise',
+                style: { stroke: '#dfe3e9', strokeWidth: 3, fill: { color: '#fefefe', gradientType: "linear", gradientStops: [[0, 1], [50, 0.9], [100, 1]] } },
+                marks: {
+                    colorRemaining: { color: 'grey', border: 'grey' },
+                    colorProgress: { color: '#00a4e1', border: '#00a4e1' },
+                    type: 'line',
+                    offset: '71%',
+                    thickness: 3,
+                    size: '6%',
+                    majorSize: '9%',
+                    majorInterval: 10,
+                    minorInterval: 2
+                },
+                labels: {
+                    offset: '88%',
+                    step: 10,
+                    visible: true
+                },
+                progressBar: {
+                    style: { fill: '#00a4e1', stroke: 'grey' },
+                    size: '9%',
+                    offset: '60%',
+                    background: { fill: 'grey', stroke: 'grey' }
+                },
+                pointer: { type: 'arrow', style: { fill: '#00a4e1', stroke: 'grey' }, size: '59%', offset: '49%', thickness: 20 }
+            });
+            var input = $('<div class="inputField">');
+            $('#containerknob2').append(input);
+            var inputOptions = {
+                width: 80,
+                height: '40px',
+                decimal: 0, // starting value same as widget
+                min: -90,  // same as widget
+                max: 90, // same as widget
+                textAlign: 'center',
+                decimalDigits: 1,
+                inputMode: 'simple'
+            };
+            $(input).jqxNumberInput(inputOptions);
+            $(input).on('mousedown', function (event) {
+                event.stopPropagation();
+            });
+            $(input).on('keyup', function () {
+                var val = $(this).val();
+                $('#containerknob2').val(val);
+            });
+            $(input).on('change', function () {
+                var val = $(this).val();
+                $('#containerknob2').val(val);
+            });
+            $('#containerknob2').on('change', function (event) {
+                if (event.args.changeSource == 'propertyChange' || event.args.changeSource == 'val') { return; }
+                $(input).val(event.args.value);
+            })
+        });
+
+		$(document).ready(function () {
+            $('#containerknob3').jqxKnob({
+                value: 0,
+                min: -90,
+                max: 90,
+                startAngle: 120,
+                endAngle: 420,
+                snapToStep: true,
+                rotation: 'clockwise',
+                style: { stroke: '#dfe3e9', strokeWidth: 3, fill: { color: '#fefefe', gradientType: "linear", gradientStops: [[0, 1], [50, 0.9], [100, 1]] } },
+                marks: {
+                    colorRemaining: { color: 'grey', border: 'grey' },
+                    colorProgress: { color: '#00a4e1', border: '#00a4e1' },
+                    type: 'line',
+                    offset: '71%',
+                    thickness: 3,
+                    size: '6%',
+                    majorSize: '9%',
+                    majorInterval: 10,
+                    minorInterval: 2
+                },
+                labels: {
+                    offset: '88%',
+                    step: 10,
+                    visible: true
+                },
+                progressBar: {
+                    style: { fill: '#00a4e1', stroke: 'grey' },
+                    size: '9%',
+                    offset: '60%',
+                    background: { fill: 'grey', stroke: 'grey' }
+                },
+                pointer: { type: 'arrow', style: { fill: '#00a4e1', stroke: 'grey' }, size: '59%', offset: '49%', thickness: 20 }
+            });
+            var input = $('<div class="inputField">');
+            $('#containerknob3').append(input);
+            var inputOptions = {
+                width: 80,
+                height: '40px',
+                decimal: 0, // starting value same as widget
+                min: -90,  // same as widget
+                max: 90, // same as widget
+                textAlign: 'center',
+                decimalDigits: 1,
+                inputMode: 'simple'
+            };
+            $(input).jqxNumberInput(inputOptions);
+            $(input).on('mousedown', function (event) {
+                event.stopPropagation();
+            });
+            $(input).on('keyup', function () {
+                var val = $(this).val();
+                $('#containerknob3').val(val);
+            });
+            $(input).on('change', function () {
+                var val = $(this).val();
+                $('#containerknob3').val(val);
+            });
+            $('#containerknob3').on('change', function (event) {
+                if (event.args.changeSource == 'propertyChange' || event.args.changeSource == 'val') { return; }
+                $(input).val(event.args.value);
+            })
+        });
+
+    </script>
+</head>
+
+	<body>
+	<h1>Control Page</h1>
+	<h2>
+		TRANSESOPHAGEAL ECHOCARDIOGRAPHY TELEROBOTICS SYSTEM (TTS)<br>
+		RUMAH SAKIT JANTUNG DAN PEMBULUH DARAH HARAPAN KITA
+	</h2>
+	<p>
+		<img src="{%static 'logoharkit.png'%}" alt="Image" width= "72" height= "50">
+	</p>
+	<p1>
+		<button class="emergency" onclick="openemergency()">Emergency<br><br>Stop</button>
+	</p1>
+	<div class="TTS">
+		<label>TTS DISPLAY</label>
+    	<p2>
+			<img src="display_usg.gif" width="100%" height= "100%">
+		</p2>
+		<p3>
+			<button><img src="capture1.jpg" alt="Image" width= "66" height= "34"></button>	
+		</p3>
+		<p4>
+			<button><img src="record.jpg" alt="Image" width= "66" height= "34"></button>
+		</p4>
+    </div>
+
+	<div class="TEE">
+		<label>TEE PROBE TIP POSITION</label>
+		<p8>
+			<img src="TEE_position.jpg" width= "100%" height= "100%">
+		</p8>
+
+
+
+<div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+  <p>Value: <span id="demo"></span></p>
+</div>
+<script>
+var slider = document.getElementById("myRange");
+var output = document.getElementById("demo");
+output.innerHTML = slider.value;
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+</script>
+
+<div class='containerknob'>
+	<div id='containerknob1' style="width: 200px; height: 200px;">
+	</div>
+
+	<div id='containerknob2' style="width: 200px; height: 200px;">
+	</div>
+
+	<div id='containerknob3' style="width: 200px; height: 200px;">
+	</div>
+</div>
+
+	</div>
+		
+
+	<div class="menu">
+		<p5>
+			<button class="logout" onclick="openlogout()">LOGOUT</button>
+		</p5>
+		<p6>
+			<a href="https://karya-indonesia-cerdas.com"><button>HELP</button></a>
+		</p6>
+		<p7>
+			<button class="setting" onclick="openNav()">SETTING</button>
+		</p7>
+	</div>
+
+	<div id="emergency-choice" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeemergency()">&times;</a>
+		<div class="overlay-content">
+		<a>Operasi sedang berjalan! <br> Apakah anda yakin ingin mengaktifkan tombol emergency?<br></a>
+		  <a href="login.html">Yes</a>
+		  <a onclick="closeemergency()">No</a>
+		</div>
+	  </div>
+	
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+		  <a onclick="openganti()">Ganti Password</a>
+		</div>
+	  </div>
+
+	<div id="choice" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closelogout()">&times;</a>
+		<div class="overlay-content">
+		<a>Apakah anda yakin ingin logout?</a>
+		  <a href="login.html">Yes</a>
+		  <a onclick="closelogout()">No</a>
+		</div>
+	  </div>
+
+	  <div id="gantipass" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeganti()">&times;</a>
+		<div class="overlay-content">
+		<a>GANTI PASSWORD<br><br></a>
+		  <a>Username<br></a>
+		  <input type="text" id="user" placeholder="Masukkan Username">
+		  <a>Password Lama<br></a>
+		  <input type="text" id="pwlama" placeholder="Masukkan Password Lama">
+		  <a>Password Baru</a>
+		  <input type="text" id="pwbaru" placeholder="Masukkan Password Baru">
+		  <a id="btnganti" href="login.html">Ganti</a>
+		  <a id="btnbatal" onclick="closeganti()">Batal</a>
+		</div>
+	  </div>
+
+	  <script>
+	  function openganti(){
+		  document.getElementById("gantipass").style.width="100%";
+		}
+	  function closeganti(){
+		  document.getElementById("gantipass").style.width="0%";
+	  }
+	  function openemergency(){
+		  document.getElementById("emergency-choice").style.width="100%";
+		}
+	  function closeemergency(){
+		  document.getElementById("emergency-choice").style.width="0%";
+	  }
+	  function openlogout(){
+		  document.getElementById("choice").style.width="100%";
+		}
+	  function closelogout(){
+		  document.getElementById("choice").style.width="0%";
+	  }
+		function openNav() {
+		document.getElementById("myNav").style.width = "100%";
+	  }
+	  
+	  function closeNav() {
+		document.getElementById("myNav").style.width = "0%";
+	  }
+	  </script>
+
+    </body>
+</html>

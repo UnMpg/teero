@@ -1,0 +1,51 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{%static 'login.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+        <kop>
+            <logoharkit><img src="{%static 'logoharkit.png'%}" alt="Image" height=40% width=30%></logoharkit>
+    
+            <h1>TRANSESOPHAGEAL ECHOCARDIOGRAPHY TELEROBOTIC SYSTEM (TTS)<br/>
+                RUMAH SAKIT JANTUNG DAN PEMBULUH DARAH HARAPAN KITA</h1>
+        </kop>
+    <h2>LOGIN</h2>
+	<form method="POST" action="">
+	<user>
+		<label>Username</label><br>
+		<input type="text" name="username" placeholder="Username....."><br>
+	</user>
+	<pw>
+		<label>Password</label><br>
+		<input type="password" name="password" placeholder="Password....."><br>
+	</pw>
+	<login>
+		<input type="submit" name="" value="LOGIN"><br>
+	</login>
+	</form>
+    </div>
+
+
+
+    <!-- <div class="image">
+        {% for image in image %}
+            <div>
+                <h2><a href="#">{{image.patientname}}</a></h2>
+                <p>{{image.patientblood}}</p>
+                <p>{{image.patientage}}</p>
+                <p>{{image.email}}</p>
+                <p>{{image.date}}</p>
+            
+            </div> 
+        {% endfor %}
+    </div> -->
+</body>
+</html>

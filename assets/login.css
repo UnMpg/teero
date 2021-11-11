@@ -1,0 +1,131 @@
+body{
+	position: relative;
+	width: 100%;
+	height: 100%;
+
+	background: #A0E3D7;
+}
+.container{
+	position: absolute;
+	width: 80%;
+	height: 700px;
+	left: 10%;
+	top: 10%;
+
+	background: #E6E6E6;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+}
+.container kop{
+	position: absolute;
+	width: 100%;
+	height: 40%;
+
+	background: #C4C4C4;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+}
+.container kop h1{
+	position: relative;
+	width: 80%;
+	height: 100%;
+	left: 15%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 180%;
+	line-height: 110%;
+	text-align: center;
+	color: #0007AE;
+}
+.container kop logoharkit{
+	position: absolute;
+    width: 50%;
+	height: 50%;
+	left: 5%;
+	top: 10%;
+}
+.container h2{
+	position: absolute;
+	width: 40%;
+	height: 20%;
+	left: 30%;
+	top: 35%;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 42px;
+
+	color: #03008C;
+}
+.container form user label{
+	position: absolute;
+	width: 40%;
+	height: 28px;
+	left: 30%;
+	top: 340px;
+	
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+
+	color: #000000;
+}
+.container form pw label{
+	position: absolute;
+	width: 40%;
+	height: 29px;
+	left: 30%;
+	top: 430px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #000000;
+}
+
+.container form user input{
+	position: absolute;
+	width: 40%;
+	height: 45px;
+	left: 30%;
+	top: 370px;
+
+	background: #FFFFFF;
+    font-size: 100%;
+}
+.container form pw input{
+	position: absolute;
+	width: 40%;
+	height: 44px;
+	left: 30%;
+	top: 460px;
+
+	background: #FFFFFF;
+	font-size: 100%;
+}
+.container form login input{
+	position: absolute;
+	width: 40%;
+	height: 10%;
+	left: 30%;
+	top: 85%;
+
+	background: #001898;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	transform: matrix(1, 0, 0, 1, 0, 0);
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 200%;
+	line-height: 42px;
+
+	color: #FFFFFF;}

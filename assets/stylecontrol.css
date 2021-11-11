@@ -1,0 +1,453 @@
+body{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #C4C4C4;
+}
+
+h1{
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    top: 10px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;    
+}
+
+p{
+    position: absolute;
+    left: 10%;
+    margin-top: 80px;
+    
+    background: url(.png);
+}
+
+h2{
+    position: absolute;
+    width: 100%;
+    height: 42px;
+    top: 70px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    
+    color: #0007AE;    
+}
+
+p1 button{
+    position: absolute;
+    height: 45px;
+    left: 85%;
+    top: 75px;
+    text-align: center;
+    background: #F40000;
+
+    
+    font-style: normal;
+    
+    font-size: 100%;
+    line-height: 9px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+}
+
+p1 button:hover{
+  background:#000000;
+}
+
+.TTS{
+    position: absolute;
+    width: 675px;
+    height: 480px;
+    left: 50px;
+    top: 160px;
+    
+    background: #E6E5E5;
+}
+
+.TTS label{
+    position: absolute;
+    width: 100%;
+    height: 21px;
+    top: 10px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.TTS p2{
+    position: absolute;
+    left: 0px;
+    top: 40px;
+    width: 100%;
+    height: 370px;
+}
+
+.TTS p3 button{
+    position: absolute;
+    Width: 80.64px;
+    Height: 40px;
+    Top: 420px;
+    Left :10%;
+    
+    background: #CCCCCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.TTS p3 button:hover{
+  opacity:0.5;
+}
+
+.TTS p4 button{
+    position: absolute;
+    Width: 80.64px;
+    Height: 40px;
+    Top: 420px;
+    Right :10%;
+    
+    background: #CCCCCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.TTS p4 button:hover{
+  opacity:0.5;
+}
+
+.TEE{
+    position: absolute;
+    width: 675px;
+    height: 480px;
+    left: 800px;
+    top: 160px;
+    
+    background: #E6E5E5;
+}
+
+.TEE label{
+    position: absolute;
+    width: 100%;
+    height: 21px;
+    top: 10px;
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #000000;
+}
+
+.TEE p8{
+    position: absolute;
+    right: 25px;
+    top: 40px;
+    width: 70%;
+    height: 220px;
+}
+
+.containerknob{
+  width: 525px;
+  margin-left: 125px;
+  margin-top: 50px;
+  height: 190px;
+  background: #AAA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+#containerknob1{
+  margin-left: 10px;
+  top: 10px;
+}
+
+#containerknob2{
+  margin-left: 180px;
+  top: -150px;
+}
+
+#containerknob3{
+  margin-left: 350px;
+  top: -310px;
+}
+
+.menu{
+    position: absolute;
+    width: 287px;
+    height: 52px;
+    left: 220px;
+    top: 650px;
+    
+    background: #E6E5E5;
+}
+
+.menu p5 button{
+    position: absolute;
+    width: 68px;
+    height: 34px;
+    left: 25px;
+    top: 9px;
+    
+    background: #CCCCCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.menu p5 button:hover{
+  background:#E6E5E5;
+}
+
+.menu p6 button{
+    position: absolute;
+    width: 68px;
+    height: 34px;
+    left: 109px;
+    top: 9px;
+    
+    background: #CCCCCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.menu p6 button:hover{
+  background:#E6E5E5;
+}
+
+.menu p7 button{
+    position: absolute;
+    width: 73px;
+    height: 34px;
+    left: 193px;
+    top: 9px;
+    
+    background: #CCCCCC;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.menu p7 button:hover{
+  background:#E6E5E5;
+}
+
+.slidecontainer p{
+    position: absolute;
+    height: 21px;
+    top: -70px;
+    left: -80px;
+    transform: rotate(90deg);
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    /* identical to box height */
+    
+    text-align: left;
+    
+    color: #000000;
+}
+
+.slidecontainer {
+    width: 400px; /* Width of the outside container */
+    margin-top: 200px;
+    margin-left: -150px;
+    transform: rotate(-90deg);
+  }
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 90%; /* Full-width */
+    height: 15px; /* Specified height */
+    background: #b3b3b3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  /* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+
+  #btnganti {
+    margin-top: 30px;
+    margin-right: 30%;
+  }
+  #btnbatal {
+    margin-top: -50px;
+    margin-left: 30%;
+  }
+
+  #user{
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+  }
+
+  #pwlama{
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+  }
+
+  #pwbaru{
+    height: 30px;
+    width: 250px;
+    font-size: 18px;
+  }
+
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    h2 {font-size: 14px}
+    p {margin-top: 125px}
+    p1 button{
+      margin-top: 55px;
+      left: 70%;
+    }
+    .TTS {
+      margin-top:25px;
+      width:80%;
+      height: 360px;
+    }
+    .TTS p4 button{
+      margin-top: -110px;
+    }
+    .TTS p3 button{
+      margin-top: -110px;
+    }
+    .TTS p2 {
+      height: 260px;
+    }
+    .menu{
+      left: 20%;
+      margin-top: 450px;
+    }
+    .TEE{
+      top:550px;
+      left: 50px;
+      width:80%;
+      height: 360px;
+    }
+    .TEE p8{
+      height: 180px;
+      margin-left: 0px;
+    }
+
+    .slidecontainer{
+      width: 300px;
+      margin-top: 160px;
+      margin-left: -110px;
+    }
+
+    .slidecontainer p{
+      margin-top: 75px;
+      margin-left: 30px;
+      font-size: 16px;
+    }
+    
+    .containerknob{
+      width: 90%;
+      margin-left: 5%;
+      margin-top: 180px;
+    }
+
+
+  }
+
+/*! roundSlider v1.6.1 | (c) 2015-2020, Soundar | MIT license | http://roundsliderui.com/licence.html */
+.rs-ie,.rs-edge,.rs-handle{-ms-touch-action:none;touch-action:none}.rs-control{position:relative;outline:0 none}.rs-container{position:relative}.rs-control *,.rs-control *:before,.rs-control *:after{-webkit-box-sizing:border-box;box-sizing:border-box}.rs-animation .rs-transition{transition:all 0.5s linear 0s}.rs-bar{-webkit-transform-origin:100% 50%;-ms-transform-origin:100% 50%;transform-origin:100% 50%}.rs-control .rs-split .rs-path,.rs-control .rs-overlay1,.rs-control .rs-overlay2{-webkit-transform-origin:50% 100%;-ms-transform-origin:50% 100%;transform-origin:50% 100%}.rs-control .rs-overlay{-webkit-transform-origin:100% 100%;-ms-transform-origin:100% 100%;transform-origin:100% 100%}.rs-rounded .rs-seperator,.rs-split .rs-path{-webkit-background-clip:padding-box;background-clip:padding-box}.rs-disabled{opacity:.35}.rs-inner-container{height:100%;width:100%;position:absolute;top:0;overflow:hidden}.rs-control .rs-quarter div.rs-block{height:200%;width:200%}.rs-control .rs-half.rs-top div.rs-block,.rs-control .rs-half.rs-bottom div.rs-block{height:200%;width:100%}.rs-control .rs-half.rs-left div.rs-block,.rs-control .rs-half.rs-right div.rs-block{height:100%;width:200%}.rs-control .rs-bottom .rs-block{top:auto;bottom:0}.rs-control .rs-right .rs-block{right:0}.rs-block.rs-outer{border-radius:1000px}.rs-block{height:100%;width:100%;display:block;position:absolute;top:0;overflow:hidden;z-index:3}.rs-block .rs-inner{border-radius:1000px;display:block;height:100%;width:100%;position:relative}.rs-overlay{width:50%}.rs-overlay1,.rs-overlay2{width:100%}.rs-overlay,.rs-overlay1,.rs-overlay2{position:absolute;background-color:#fff;z-index:3;top:0;height:50%}.rs-bar{display:block;position:absolute;bottom:0;height:0;z-index:10}.rs-bar.rs-rounded{z-index:5}.rs-bar .rs-seperator{height:0;display:block;float:left}.rs-bar:not(.rs-rounded) .rs-seperator{border-left:none;border-right:none}.rs-bar.rs-start .rs-seperator{border-top:none}.rs-bar.rs-end .rs-seperator{border-bottom:none}.rs-bar.rs-start.rs-rounded .rs-seperator{border-radius:0 0 1000px 1000px}.rs-bar.rs-end.rs-rounded .rs-seperator{border-radius:1000px 1000px 0 0}.rs-full .rs-bar,.rs-half .rs-bar{width:50%}.rs-half.rs-left .rs-bar,.rs-half.rs-right .rs-bar,.rs-quarter .rs-bar{width:100%}.rs-full .rs-bar,.rs-half.rs-left .rs-bar,.rs-half.rs-right .rs-bar{top:50%}.rs-bottom .rs-bar{top:0}.rs-half.rs-right .rs-bar,.rs-quarter.rs-right .rs-bar{right:100%}.rs-handle.rs-move{cursor:move}.rs-readonly .rs-handle.rs-move{cursor:default}.rs-classic-mode .rs-path{display:block;height:100%;width:100%}.rs-split .rs-path{border-radius:1000px 1000px 0 0;overflow:hidden;height:50%;position:absolute;top:0;z-index:2}.rs-control .rs-svg-container{display:block;position:absolute;top:0}.rs-control .rs-bottom .rs-svg-container{top:auto;bottom:0}.rs-control .rs-right .rs-svg-container{right:0}.rs-tooltip{position:absolute;cursor:default;border:1px solid transparent;z-index:10}.rs-full .rs-tooltip{top:50%;left:50%}.rs-bottom .rs-tooltip{top:0}.rs-top .rs-tooltip{bottom:0}.rs-right .rs-tooltip{left:0}.rs-left .rs-tooltip{right:0}.rs-half.rs-top .rs-tooltip,.rs-half.rs-bottom .rs-tooltip{left:50%}.rs-half.rs-left .rs-tooltip,.rs-half.rs-right .rs-tooltip{top:50%}.rs-tooltip .rs-input{outline:0 none;border:none;background:transparent}.rs-tooltip-text{font-family:verdana;font-size:13px;border-radius:7px;text-align:center;color:inherit}.rs-tooltip.rs-edit{padding:5px 8px}.rs-tooltip.rs-hover,.rs-tooltip.rs-edit:hover{border:1px solid #AAA;cursor:pointer}.rs-readonly .rs-tooltip.rs-edit:hover{border-color:transparent;cursor:default}.rs-tooltip.rs-center{margin:0px!important}.rs-half.rs-top .rs-tooltip.rs-center,.rs-half.rs-bottom .rs-tooltip.rs-center{transform:translate(-50%,0)}.rs-half.rs-left .rs-tooltip.rs-center,.rs-half.rs-right .rs-tooltip.rs-center{transform:translate(0,-50%)}.rs-full .rs-tooltip.rs-center{transform:translate(-50%,-50%)}.rs-tooltip.rs-reset{margin:0px!important;top:0px!important;left:0px!important}.rs-handle{border-radius:1000px;outline:0 none;float:left}.rs-handle.rs-handle-square{border-radius:0}.rs-handle-dot{border:1px solid #AAA;padding:6px}.rs-handle-dot:after{display:block;content:"";border:1px solid #AAA;height:100%;width:100%;border-radius:1000px}.rs-seperator{border:1px solid #AAA}.rs-border{border:1px solid #AAA}.rs-path-color{background-color:#FFF}.rs-range-color{background-color:#54BBE0}.rs-bg-color{background-color:#FFF}.rs-handle{background-color:#838383}.rs-handle-dot{background-color:#FFF}.rs-handle-dot:after{background-color:#838383}.rs-path-inherited .rs-path{opacity:.2}.rs-svg-mode .rs-path{stroke:#FFF}.rs-svg-mode .rs-range{stroke:#54BBE0}.rs-svg-mode .rs-border{stroke:#AAA}
